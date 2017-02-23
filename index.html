@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>KeepCUBE</title>
+    <style>
+        @font-face {
+            font-family: 'OpenSans';
+            font-style: normal;
+            font-weight: 300;
+            src: url('/fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'OpenSans';
+            font-style: normal;
+            font-weight: 700;
+            src: url('/fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
+        }
+        html, body, #cube {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: OpenSans, Verdana, sans-serif;
+        }
+        #cube {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #cube > div {
+            width: 100%;
+            height:50%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 0.8em;
+            box-sizing: border-box;
+        }
+        #cube > div:first-child {
+            font-size: 2.3em;
+        }
+        #cube > div:first-child div {
+            color: #029de5;
+            line-height: 1.15;
+        }
+        #cube > div:first-child #very {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #7b7b7b;
+            line-height: 0.93;
+        }
+        #cube > div:first-child #coming {
+            color: #7b7b7b;
+            margin-left: 36px;
+        }
+        #cube > div:first-child #cool {
+            margin-left: 10px;
+        }
+        #cube > div:nth-child(2) {
+            align-items: flex-start;
+            background-color: #029de5;
+            color: white;
+        }
+        #cube > div:nth-child(2) > h2 {
+            font-weight: 300;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="cube">
+        <div>
+            <div>
+                <div id="something">Something</div>
+                <div id="coming">is coming</div>
+            </div>
+            <div>
+                <div id="very">VERY</div>
+            </div>
+            <div>
+                <div id="cool">cool</div>
+                <div id="soon">soon</div>
+            </div>
+        </div>
+        <div>
+            <h2>
+                OPENSOURCE ##### #### SOLUTION, ####### FOR DIYers
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

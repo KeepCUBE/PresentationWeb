@@ -16,6 +16,10 @@
             font-weight: 700;
             src: url('/fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
         }
+        @keyframes colorchange {
+            0%{filter: hue-rotate(0deg);}
+            100%{filter: hue-rotate(360deg);}
+        }
         html, body, #cube {
             width: 100%;
             padding: 0;
@@ -49,6 +53,7 @@
         }
         #cube > header > img {
             width: 100%;
+            animation: colorchange 20s infinite;
         }
         #cube > div > h4 {
             width: 70%;

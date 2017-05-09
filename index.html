@@ -3,99 +3,40 @@
 <head>
     <meta charset="utf-8">
     <title>KeepCUBE</title>
-    <style>
-        @font-face {
-            font-family: 'OpenSans';
-            font-style: normal;
-            font-weight: 300;
-            src: url('/fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
-        }
-        @font-face {
-            font-family: 'OpenSans';
-            font-style: normal;
-            font-weight: 700;
-            src: url('/fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
-        }
-        @keyframes colorchange {
-            from    {filter: hue-rotate(0deg)   brightness(1.2) contrast(90%);}
-            to      {filter: hue-rotate(360deg) brightness(1.2) contrast(90%);}
-        }
-        html, body, #cube {
-            width: 100%;
-            padding: 0;
-            margin: 0;
-            font-family: OpenSans, Verdana, sans-serif;
-        }
-        #cube {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            flex-shrink: 0;
-        }
-        #cube > div, #cube > header {
-            width: 100%;
-            height:100%;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            box-sizing: border-box;
-        }
-        #cube > header > div {
-            position: absolute;
-            left: 1em;
-            top: 8.5em;
-            font-size: 3em;
-        }
-        #cube > header > div > h1, #cube > header > div > h6{
-            margin: 0;
-            line-height: 1;
-        }
-        #cube > header > img {
-            width: 100%;
-            animation: colorchange 10s infinite;
-            animation-timing-function: linear;
-        }
-        #cube > div > h4 {
-            width: 70%;
-            text-align: justify;
-        }
-        #cube > div > h4 b {
-            font-weight: 700;
-        }
-        #cube > .social {
-            margin-top: 6em;
-            margin-bottom: 3em;
-            width: 35%;
-            justify-content: space-around;
-        }
-        #cube > .social > div{
-            width: 20%;
-        }
-        #cube > .social a:hover .social-icon__github {
-            fill: #c6cbd1;
-        }
-        #cube > .social a:hover .social-icon__facebook {
-            fill: #426FFF;
-        }
-    </style>
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
     <div id="cube">
         <header>
             <img src="/imgs/keepcube.jpg" alt="homepage keepcube image">
-            <div>
-                <h1>KEEP<span style="font-weight: 300">CUBE</span></h1>
+            <div id="header__text">
+                <h1>KEEP<span class="light">CUBE</span></h1>
                 <h6>SMART HOME SOLUTION FOR DIYers</h6>
             </div>
         </header>
         <div>
-            <h4>
-                KeepCUBE the ingeligent house has been founded 2 years ago by 2 high school students who had a great
-                idea to let your home be absolutely awesome. As time went on another 4 students have boarded the ship and
-                successfully designed own communication architecture that would allow people connect almost anything.
-                Why people? Because this is the first <br><b>open-source</b> solution ever made.
-            </h4>
+            <canvas width="400" height="400" id="cube-wireframe"></canvas>
+            <div id="what-is">
+                <h2>What is KEEP<span class="light">CUBE</span>?</h2>
+                <p>
+                    <span class="bold">KEEP</span>CUBE is an opensource smart home solution, which is easy to use
+                    and allows anyone to automate it‘s home.
+                </p>
+                <p>
+                    With fully 3D printable chasis and build schematics available online, every maker
+                    will be able to build it‘s own CUBE.
+                </p>
+            </div>
+        </div>
+        <div id="no-reconstruction">
+            <div>
+                <h2>NO HOME RECONSTRUCTION NEEDED</h2>
+                <p>
+                    Since KEEPCUBE is using wireless technology to comunicate with smart accessories, there is no need to
+                    physicaly modify the structure of your flat.
+                </p>
+            </div>
+            <img src="/imgs/kostkawifi.png">
         </div>
         <div class="social">
             <div>
@@ -109,6 +50,30 @@
                 </a>
             </div>
         </div>
+        <div id="team" class="vertical-box">
+            <h2 class="light">MEET THE KEEPERS</h2>
+            <div class="horizontal-box">
+                <div>
+                    <img src="/imgs/team/vardanjan.jpg" alt="Narek Vardanjan">
+                </div>
+                <div>
+                    <img src="/imgs/team/dosoudil.jpg" alt="Dominik Dosoudil">
+                </div>
+                <div>
+                    <img src="/imgs/team/sefl.jpg" alt="Marek Šefl">
+                </div>
+                <div>
+                    <img src="/imgs/team/kadera.jpg" alt="Dominik Kadera">
+                </div>
+                <div>
+                    <img src="/imgs/team/simecek.jpg" alt="Richard Šimeček">
+                </div>
+                <div>
+                    <img src="/imgs/team/telka.jpg" alt="Ondrej Telka">
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

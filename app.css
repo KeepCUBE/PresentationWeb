@@ -108,3 +108,22 @@ html, body, #cube {
 #team > div > div > img {
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    #cube > header > img {
+        height: 100vh;
+        width: auto;
+        animation: colorchange 10s infinite;
+        animation-timing-function: linear;
+    }
+    #cube > header > div {
+        top: auto;
+        bottom: 14em;
+    }
+    #cube > header > div > h1 {
+        font-size: 3em;
+    }
+    #cube > header > div > h6{
+        font-size: 1em;
+    }
+}

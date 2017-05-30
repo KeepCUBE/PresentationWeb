@@ -108,3 +108,19 @@ html, body, #cube {
 #team > div > div > img {
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    #cube > header > img {
+        height: 100vh;
+        width: auto;
+    }
+    #cube > header > div {
+        top: calc(100%/1.9);
+    }
+    #cube > header > div > h1 {
+        font-size: 3em;
+    }
+    #cube > header > div > h6{
+        font-size: 1em;
+    }
+}

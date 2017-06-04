@@ -42,7 +42,7 @@ html, body, #cube {
     flex-direction: column;
     flex-shrink: 0;
 }
-#cube > div, #cube > header {
+#cube > section, #cube > header {
     width: 100%;
     height:100%;
     display: flex;
@@ -65,11 +65,11 @@ html, body, #cube {
     animation: colorchange 10s infinite;
     animation-timing-function: linear;
 }
-#cube > div > h4 {
+#cube > section > h4 {
     width: 70%;
     text-align: justify;
 }
-#cube > div > h4 b {
+#cube > section > h4 b {
     font-weight: 700;
 }
 #cube > .social {
@@ -107,6 +107,73 @@ html, body, #cube {
 }
 #team > div > div > img {
     width: 100%;
+}
+#cube > #features {
+    flex-wrap: wrap;
+    margin-top: 8%;
+    align-items: flex-start;
+}
+#features > div {
+    width: 20%;
+    margin: 3rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+#features > div > img {
+    width: 50%;
+}
+#features > div > h3 {
+    text-transform: uppercase;
+}
+#cube > #prototyping {
+    position: relative;
+}
+#cube > #prototyping > h3 {
+    position: absolute;
+    top: 3em;
+    left: 5em;
+    color: white;
+    font-weight: 300;
+}
+#cube > #prototyping > img {
+    width: 100%;
+}
+
+#cube > #shop-possibility {
+    margin-top: 8%;
+    flex-direction: column;
+    align-items: center;
+}
+#cube > #shop-possibility > div {
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+}
+#cube > #shop-possibility > div > div {
+    width: 28%;
+    margin: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#cube > #shop-possibility > div > div > h5 {
+    margin-top: auto;
+}
+#cube > #shop-possibility > div > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(82, 182, 236);
+    color: #FFF;
+    padding-top: 8%;
+}
+#cube > #shop-possibility > div > div img {
+    width: 54%;
+}
+#cube > #shop-possibility > h3 {
+    font-weight: 300;
 }
 
 @media (max-width: 768px) {

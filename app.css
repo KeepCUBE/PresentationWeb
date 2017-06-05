@@ -105,7 +105,26 @@ html, body, #cube {
     align-items: center;
     margin-top: 8%;
 }
-#team > div > div > img {
+#cube > #team > div:first-child{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#cube > #team > div:first-child > div {
+    margin: .5em;
+    font-size: 36px;
+}
+#cube > #team > div:first-child > div:nth-child(2) > p {
+    text-transform: uppercase;
+    font-size: 28px;
+    margin:0;
+    line-height: 1;
+}
+#cube > #team > div:first-child > div:nth-child(2) > p:first-child {
+    color: rgb(82, 182, 236);
+    font-weight: 700;
+}
+#cube > #team > div > div > img {
     width: 100%;
 }
 #cube > #features {

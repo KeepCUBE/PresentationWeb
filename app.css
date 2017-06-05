@@ -157,8 +157,16 @@ html, body, #cube {
     flex-direction: column;
     justify-content: flex-start;
 }
+#cube > #shop-possibility > div > div > p {
+    font-size: 22px;
+}
 #cube > #shop-possibility > div > div > h5 {
     margin-top: auto;
+    font-size: 22px;
+    color: rgb(82, 182, 236);
+}
+#cube > #shop-possibility > div > div > div > h5 {
+    font-size: 24px;
 }
 #cube > #shop-possibility > div > div > div {
     display: flex;
@@ -170,10 +178,11 @@ html, body, #cube {
     padding-top: 8%;
 }
 #cube > #shop-possibility > div > div img {
-    width: 54%;
+    width: 30%;
 }
 #cube > #shop-possibility > h3 {
     font-weight: 300;
+    font-size: 34px;
 }
 
 @media (max-width: 768px) {

@@ -274,6 +274,79 @@ a.square {
     color: #787878;
 }
 
+#cube > #progress {
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+}
+
+#cube > #progress h3 {
+    margin-bottom: 0;
+}
+
+#cube > #progress > div {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+#cube > #progress .bar {
+    color: rgb(82, 182, 236);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 1em;
+}
+
+#cube > #progress .bar.p-10 > div {
+    width: 10%;
+}
+#cube > #progress .bar.p-20 > div {
+    width: 20%;
+}
+#cube > #progress .bar.p-30 > div {
+    width: 30%;
+}
+#cube > #progress .bar.p-40 > div {
+    width: 40%;
+}
+#cube > #progress .bar.p-50 > div {
+    width: 50%;
+}
+#cube > #progress .bar.p-60 > div {
+    width: 60%;
+}
+#cube > #progress .bar.p-70 > div {
+    width: 70%;
+}
+#cube > #progress .bar.p-80 > div {
+    width: 80%;
+}
+#cube > #progress .bar.p-90 > div {
+    width: 90%;
+}
+
+#cube > #progress .bar.p-100
+{
+    color: rgb(0, 249, 149);
+}
+
+#cube > #progress .bar > div {
+    height: 8px;
+    margin-right: .4em;
+    border-radius: 5px;
+    width: 80%;
+    background-color: rgb(82, 182, 236);
+}
+
+
+#cube > #progress .bar.p-100 > div {
+    background-color: rgb(0, 249, 149);
+}
+
+#cube > #progress > div > h2, #cube > #progress > div h3 {
+    font-weight: 100;
+}
+
 @media (max-width: 768px) {
     #cube > header > img {
         height: 100vh;
